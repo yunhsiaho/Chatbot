@@ -20,6 +20,7 @@ $(()=>{
     })
     $("#delete").click(()=>{
         deleteMessages();
+        window.location.reload();
     })
     getMessages();
 })

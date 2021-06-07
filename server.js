@@ -43,6 +43,18 @@ io.on('connection',(socket)=>{
     console.log('user connected');
 })
 
+app.delete('/messages',(req, res)=> {
+
+    const id = req.params.id;
+    Article.delete(id, (err) => {
+        if (err) return next(err);
+        res.send({ message: 'Deleted' });
+        res.status(200);
+    })
+    //DELETE YOUR RECORD WITH YOUR PARAM.
+    
+})
+
 mongoose.connect(dbUrl, (err)=>{
     console.error(err);
     console.log('mongoose connected!');
