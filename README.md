@@ -1,6 +1,6 @@
 # Chatbot
 
- 	[Check here](https://hsia-chatbot.herokuapp.com/)
+  [Check here](https://hsia-chatbot.herokuapp.com/)
   
 # What is a Chatbot  
 
