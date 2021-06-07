@@ -19,7 +19,7 @@ function addMessages(message){
 }
 
 function getMessages(){
-$.get('http://localhost:3006/messages',(data)=>{
+$.get('https://hsia-chatbot.herokuapp.com/messages',(data)=>{
     data.forEach(addMessages)
     
 })
@@ -27,7 +27,7 @@ $.get('http://localhost:3006/messages',(data)=>{
 
 function postMessages(message){
 
-    $.post('http://localhost:3006/messages',message)
+    $.post('https://hsia-chatbot.herokuapp.com/messages',message)
     
 }
 
