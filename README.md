@@ -5,7 +5,7 @@
 # What is a Chatbot  
 
   It's a small project I've done when following the Udemy course [Become a Node.js developer:/Node.js/Express.js/MongoDB/API ](https://www.udemy.com/course/become-a-nodejs-developernodejsexpressjsmongodbapi/) 
-  Every one can use it to chat on this cite at the same time.
+  Every one can leave a message on this site.
   
 # Languages/Tools
 
