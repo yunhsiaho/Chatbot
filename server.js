@@ -46,7 +46,7 @@ io.on('connection',(socket)=>{
 app.delete('/messages',(req, res)=> {
 
     const id = req.params.id;
-    Article.delete(id, (err) => {
+    Message.delete(id, (err) => {
         if (err) return next(err);
         res.send({ message: 'Deleted' });
         res.status(200);
@@ -54,9 +54,11 @@ app.delete('/messages',(req, res)=> {
     //DELETE YOUR RECORD WITH YOUR PARAM.
     
 })
+mongoose.connect(dbUrl, { useNewUrlParser: true , useUnifiedTopology: true })
+
 
 mongoose.connect(dbUrl, (err)=>{
-    console.error(err);
+    // console.error(err);
     console.log('mongoose connected!');
 });
 

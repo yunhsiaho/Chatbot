@@ -20,11 +20,12 @@ $(()=>{
     })
     $("#delete").click(()=>{
         deleteMessages();
+        console.log("delete");
         window.location.reload();
     })
     getMessages();
 })
-socket.on('message',addMessasge)
+socket.on('message',addMessages)
 
 function addMessages(message){
     $("#messages").append(
@@ -48,7 +49,6 @@ function postMessages(message){
 }
 
 function deleteMessages(message){
-
     $.delete('https://hsia-chatbot.herokuapp.com/messages',message);
     
 }
